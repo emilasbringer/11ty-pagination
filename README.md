@@ -42,3 +42,11 @@ Utöka:
 - Styling
 
 Ja och det kan bli en webbshop 🎊
+
+Självklart använder ni er av allt vi har övat på.
+
+- Komponenter
+- SASS
+- API (kanske)
+
+[Lista med gratis API](https://github.com/public-apis)
