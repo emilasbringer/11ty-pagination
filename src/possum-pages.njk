@@ -1,12 +1,13 @@
 ---
 layout: base.njk
 pagination:
-    data: possums
+    data: players
     size: 1
-    alias: possum
-permalink: "possums/{{ possum.name | slug }}/"
+    alias: player
+permalink: "players/{{ player.name | slug }}/"
 ---
 
-<img alt="{{ possum.name }}" src="https://robohash.org/{{ possum.name | slug }}?size=300x300">
+<img alt="{{ player.name }}" src="https://robohash.org/{{ player.name | slug }}?size=300x300">
 
-<h1>{{ possum.name }} är {{ possum.age }}år gammal.</h1>
+<h1>{{ player.name }} är av League Of Legends ranken: </h1>
+<h2> {{ player.age }} </h2>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pungråttor</title>
+    <title>OP.GG Profiles</title>
     <link rel="stylesheet" href="{{ '/css/main.css' }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -12,9 +12,14 @@
     <nav class="container">
         <ul class="nav">
             <li><a href="/">Hem</a></li>
+<<<<<<< HEAD
             <li><a href="/trivia">Trivia</a></li>
         {% for possum in possums %}
             <li><a href="/possums/{{ possum.name | slug }}">{{ possum.name }}</a></li>
+=======
+        {% for player in players %}
+            <li><a href="/players/{{ player.name | slug }}">{{ player.name }}</a></li>
+>>>>>>> 🎨
         {% endfor %}
         </ul>
     </nav>
