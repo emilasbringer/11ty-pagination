@@ -2,13 +2,13 @@
 layout: base.njk
 ---
 
-# Creating pages from data
+# Skapa sidor från data
 
-We can use 11ty and datafiles (json or js) to create a series of pages.
+Vi kan använda 11ty för att skapa sidor från datafiler (json eller js).
 
-[11ty documentation for this](https://www.11ty.dev/docs/pages-from-data/)
+[11ty dokumentation](https://www.11ty.dev/docs/pages-from-data/)
 
-Data file, ```_data/possums.json```:
+Data fil, ```_data/possums.json```:
 
 ```json
 [
@@ -31,7 +31,7 @@ Data file, ```_data/possums.json```:
 ]
 ```
 
-NJK template page for creating the pages, ```src/possum-pages.njk```:
+NJK templat för att skapa sidorna, ```src/possum-pages.njk```:
 
 {% raw %}
 ```markdown
@@ -47,9 +47,10 @@ permalink: "possums/{{ possum.name | slug }}/"
 ```
 {% endraw %}
 
-This example also makes use of [passthrough](https://www.11ty.dev/docs/copy/) for css.
+Detta exempel använder [passthrough](https://www.11ty.dev/docs/copy/) för att kopiera css till ```dist/``` mappen.
 
-```.eleventy.js```
+Det ser ut som följer i konfigurationsfilen ```.eleventy.js```:
+
 ```js
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/css/');
@@ -65,5 +66,10 @@ module.exports = function(eleventyConfig) {
 }
 ```
 
-To make code readable it also uses [syntax highlightning](https://www.11ty.dev/docs/plugins/syntaxhighlight/) plugin for 11ty.
+För att göra kodexempel läsbara så använder sidan även [syntax highlightning](https://www.11ty.dev/docs/plugins/syntaxhighlight/) plugin för 11ty. Det hämtar sina stilar från [Prism](https://prismjs.com/).
+
+För att arbeta vidare med sidorna så är det nog dags att du tittar på och provar [shortcodes](https://www.11ty.dev/docs/shortcodes/) eller
+[image pluginet](https://www.11ty.dev/docs/plugins/image/).
+
+Kom även ihåg att om du hämtar extern data så kan det vara klokt att [cacha](https://www.11ty.dev/docs/plugins/cache/) dessa. Detta kan med fördel kombineras med bilderna (något som borde göras och testas på robohash).
 
