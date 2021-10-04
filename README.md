@@ -21,6 +21,7 @@ npm start
 Klona detta repo, läs igenom instruktionerna. Kolla på koden.
 
 Planera din egen sida. Skapa ett nytt repo och börja arbeta.
+Skriv ned dina tankar och planer i repots README.md.
 För att skapa nytt repo och komma igång.
 
 ```bash
@@ -30,8 +31,6 @@ mkdir nyttrepo
 cd nyttrepo
 npm init -y
 npm install @11ty/eleventy
-git init
-echo node_modules > .gitignore
 ```
 
 Skapa ett galleri av någonting:
