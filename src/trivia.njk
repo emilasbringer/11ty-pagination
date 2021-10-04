@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+
+{% for item in trivia.results %}
+    <p>{{ item.question }}</p>
+    <ul>
+    {% for answer in item.incorrect_answers %}
+        <li>{{ answer }}</li>
+    {% endfor %}
+    </ul>
+    <p>{{ item.correct_answer }}</p>
+{% endfor %}
