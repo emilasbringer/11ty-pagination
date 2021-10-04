@@ -49,4 +49,4 @@ Självklart använder ni er av allt vi har övat på.
 - SASS
 - API (kanske)
 
-[Lista med gratis API](https://github.com/public-apis)
+[Lista med gratis API](https://github.com/public-apis/public-apis)
