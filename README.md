@@ -22,3 +22,5 @@ Utöka:
 - Skapa en OM sida, kan vara bra för ©
 - Bilder
 - Styling
+
+Ja och det kan bli en webbshop 🎊
