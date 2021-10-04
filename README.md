@@ -2,6 +2,20 @@
 
 Lektionsexempel
 
+## Instruktioner för att klona
+
+Öppna terminalen
+
+```bash
+cd
+cd code
+git clone https://github.com/jensnti/11ty-pagination
+cd 11ty-pagination
+npm install
+code .
+npm start
+```
+
 ## Uppgift
 
 Klona detta repo, läs igenom instruktionerna. Kolla på koden.
