@@ -1,0 +1,12 @@
+---
+layout: base.njk
+pagination:
+    data: possums
+    size: 1
+    alias: possum
+permalink: "possums/{{ possum.name | slug }}/"
+---
+
+<img alt="{{ possum.name }}" src="https://robohash.org/{{ possum.name | slug }}?size=300x300">
+
+<h1>{{ possum.name }} is {{ possum.age }} years old</h1>
